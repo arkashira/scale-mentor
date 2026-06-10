@@ -1,93 +1,91 @@
 <h3 align="center">🛠️ scale-mentor</h3>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT">
-  <img src="https://img.shields.io/badge/language-unknown-lightgrey.svg" alt="Language: unknown">
-  <img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Build: passing">
-  <img src="https://img.shields.io/github/stars/your-org/scale-mentor.svg" alt="GitHub stars">
+  <a href="https://github.com/your-org/scale-mentor"><img src="https://img.shields.io/github/license/your-org/scale-mentor?color=brightgreen" alt="License"></a>
+  <a href="https://github.com/your-org/scale-mentor"><img src="https://img.shields.io/github/languages/top/your-org/scale-mentor?color=blue" alt="Language"></a>
+  <a href="https://github.com/your-org/scale-mentor/actions"><img src="https://img.shields.io/github/workflow/status/your-org/scale-mentor/CI?label=build&color=orange" alt="Build Status"></a>
+  <a href="https://github.com/your-org/scale-mentor/stargazers"><img src="https://img.shields.io/github/stars/your-org/scale-mentor?style=social" alt="Stars"></a>
 </div>
 
 ---
 
 # 🚀 scale-mentor
+**Power founders & growth teams with data‑driven scaling playbooks and automated KPI dashboards.**  
+A single‑source platform that turns case‑study insights into actionable roadmaps, cuts trial‑and‑error time by ~30 % and keeps your financial, ops, and hiring metrics in sync with Stripe, Xero, HubSpot, and more.
 
-**Power founders with data‑driven scaling playbooks.**  
-A modular platform that turns real‑world case studies into actionable, KPI‑driven growth strategies—cutting trial‑and‑error time by ~30 %.
-
-## Why scale‑mentor?
-
-- **Rapid playbook creation** – generate step‑by‑step scaling plans in minutes, not weeks.  
-- **Built for early‑stage founders** – focus on the metrics that matter most to secure Series A funding.  
-- **Data‑driven confidence** – each recommendation is backed by real case‑study analytics.  
-- **Integrated KPI dashboard** – sync financial, ops, and hiring metrics with Stripe, Xero, HubSpot, and more.  
-- **Automation ready** – trigger actions directly from the dashboard to keep growth on autopilot.  
-- **On‑demand insights** – ask the system for custom playbooks tailored to your current stage.  
-- **Extensible architecture** – plug in new data sources or KPI modules without rewriting code.
+## Why scale-mentor?
+- **Data‑backed playbooks** – 30 % faster scaling decisions thanks to curated case‑study pathways.  
+- **Unified KPI dashboard** – Real‑time financial, operational, and hiring metrics in one view.  
+- **Seamless integrations** – Native sync with Stripe, Xero, HubSpot, and other SaaS tools.  
+- **Automation first** – Auto‑triggered alerts & workflows keep teams moving without manual hand‑offs.  
+- **On‑demand expertise** – Access expert‑grade recommendations without hiring consultants.  
+- **Built for SaaS founders** – Tailored to early‑stage & growth‑stage companies looking to scale sustainably.  
 
 ## Feature Overview
 
 | Feature | Description |
 |---------|-------------|
-| 📚 **Playbook Generator** | Converts case‑study data into step‑by‑step scaling plans. |
-| 📊 **KPI Dashboard** | Real‑time visualization of financial, ops, and hiring metrics. |
-| 🔗 **Integrations** | Connects with Stripe, Xero, HubSpot, and other SaaS tools. |
-| ⚙️ **Automation Engine** | Triggers workflows based on KPI thresholds. |
-| 🔍 **Insight Engine** | Provides on‑demand, data‑driven recommendations. |
-| 🔒 **Security & Compliance** | GDPR‑compliant data handling and role‑based access. |
+| **Step‑by‑step scaling playbooks** | Guided, data‑driven roadmaps derived from real‑world case studies. |
+| **KPI dashboard** | Live visualisation of financial, ops, and hiring metrics. |
+| **Automation engine** | Triggers actions (e.g., alerts, task creation) based on KPI thresholds. |
+| **Multi‑tool integrations** | Bi‑directional sync with Stripe, Xero, HubSpot, etc. |
+| **Export & share** | PDF/HTML export of playbooks & dashboards for stakeholder reporting. |
+| **Role‑based access** | Granular permissions for founders, finance, ops, and HR teams. |
 
 ## Tech Stack
-
-*(See `decisions/tech-stack.md` for the full, locked stack.)*
-
-- **Backend**: *(placeholder – see tech‑stack.md)*
-- **Frontend**: *(placeholder – see tech‑stack.md)*
-- **Database**: *(placeholder – see tech‑stack.md)*
-- **CI/CD**: *(placeholder – see tech‑stack.md)*
-- **Hosting**: *(placeholder – see tech‑stack.md)*
+*The technology decisions are defined in `decisions/tech-stack.md`. This section will be populated once the stack is locked.*
 
 ## Project Structure
-
 ```
-business/          # Core business logic and data models
-README.md          # This documentation file
+scale-mentor/
+├─ business/          # Business logic, domain models, and use‑case orchestration
+│   └─ ...            
+├─ src/               # Core application code (API, services, integrations)
+│   └─ ...            
+├─ tests/             # Unit & integration test suite
+│   └─ ...            
+├─ pyproject.toml     # Build system, dependencies, and entry‑points
+├─ requirements.txt   # Pin‑exact third‑party packages
+└─ README.md          # ← you are here
 ```
 
 ## Getting Started
-
-> **Prerequisites** – Install the exact versions listed in `decisions/tech-stack.md`.
+> **Note:** The exact commands depend on the finalized tech stack (see `decisions/tech-stack.md`). Replace the placeholders below with the appropriate commands once the stack is locked.
 
 ```bash
-# Clone the repository
+# 1️⃣ Clone the repository
 git clone https://github.com/your-org/scale-mentor.git
 cd scale-mentor
 
-# Install dependencies
-<install-command>   # e.g., npm install, pip install -r requirements.txt
+# 2️⃣ Install dependencies
+# (If using pip)
+pip install -r requirements.txt
 
-# Run the development server
-<run-command>       # e.g., npm run dev, python app.py
+# (If using Poetry – uncomment when Poetry is the chosen tool)
+# poetry install
 
-# Run tests
-<test-command>      # e.g., npm test, pytest
+# 3️⃣ Run the application
+# (Typical entry‑point defined in pyproject.toml)
+python -m scale_mentor   # or `poetry run scale-mentor`
+
+# 4️⃣ Run the test suite
+pytest tests/            # or `poetry run pytest`
 ```
 
 ## Deploy
-
-> **Deployment target** – see `decisions/tech-stack.md` for the exact provider and commands.
+> Deployment instructions will be added once the deployment target (Docker, Kubernetes, serverless, etc.) is confirmed in `decisions/tech-stack.md`.
 
 ```bash
-# Example deployment steps (replace with actual commands)
-<deploy-command>    # e.g., vercel --prod, aws deploy
+# Example placeholder for Docker‑based deployment
+docker build -t scale-mentor:latest .
+docker run -p 8000:8000 scale-mentor:latest
 ```
 
 ## Status
-
-🚧 **Under active development** – last commit `addd790` (Initial commit) added the project skeleton.
+🚧 **In active development** – latest commit `d6235b4` (2026‑06‑09) adds the code‑build cycle for the “scale‑me” feature.
 
 ## Contributing
-
-Please see the [CONTRIBUTING.md](CONTRIBUTING.md) guide for details on how to contribute.
+Read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to propose improvements, report bugs, and submit pull requests.
 
 ## License
-
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License**.
